@@ -10,7 +10,7 @@ def getNumber():
       inputs += symbols
     else:
       break
-  print(inputs)
+  return(inputs)
 
 def sumTwo(a,b):
 
@@ -18,17 +18,11 @@ def sumTwo(a,b):
 
    return c
 
-getNumber()
-
-x = sumTwo(3,5)
-
-print(x)
-
+getnum = getNumber()
 
 def sumDigits(x):
+    return sum(int(x) for x in x if x.isdigit())
 
-   # You will need to complete this function
-
-   return sum
-
+print(sumDigits(getnum))
+   
 
